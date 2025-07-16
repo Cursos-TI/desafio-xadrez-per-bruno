@@ -16,15 +16,26 @@ int torre = 0;
         torre++;
     }
 
-    //Rainha
-    printf("\nRainha:\n");
-    int rainha = 0;
-        do
-        {
-            printf("Esquerda\n");
-            rainha++;
-        } while (rainha < 8);
+//Rainha
+printf("\nRainha:\n");
+int rainha = 0;
+    do
+    {
+        printf("Esquerda\n");
+        rainha++;
+    } while (rainha < 8);
     
+//Cavalo
+printf("\nCavalo:\n");
+for (int cavalo1 = 0; cavalo1 < 2; cavalo1++) {
+    printf("Baixo\n");
+    
+    int cavalo2 = 0;
+    while (cavalo2 < cavalo1) {
+        printf("Esquerda\n");
+        cavalo2++;
+    }
+}
 
     return 0;
 }
